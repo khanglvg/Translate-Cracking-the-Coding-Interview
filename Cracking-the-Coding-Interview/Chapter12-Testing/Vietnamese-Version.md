@@ -97,23 +97,22 @@ The key to this problem is recognizing that we can't test every possible scenari
 ___
 
 > **Ví dụ 4:**
-  How would you load test a webpage without using any test tools?
+  Bạn sẽ kiểm tra tải một trang web như thế nào nếu không sử dụng bất kì công cụ kiểm thử nào?
      
 #### **Giải Pháp**
 
-Load testing helps to identify a web application's maximum operating capacity, as well as any bottlenecks that may interfere with its performance. Similarly, it can check how an application responds to variations in load.
-To perform load testing, we must first identify the performance critical scenarios and the metrics which fulfill our performance objectives. Typical criteria include:
-- Response time
-- Throughput
-- Resource utilization
-- Maximum load that the system can bear. 
+Kiểm tra tải giúp xác định khả năng hoạt động tối đa của một ứng dụng web, cũng như bất kỳ sực tắc nghẽn nào có thể ảnh hưởng đến hiệu suất hoạt động của ứng dụng đó. Tương tự, có thể kiểm tra cách ứng dụng phản hồi với các biến thể trong khi tải. Để thực hiện việc kiểm tra tải, trước hết, ta phải xác định các tình huống quan trọng về hiệu suất và các chỉ số đáp ứng các mục tiêu hiệu suất. Tiêu chí điển hình bao gồm:
+- Thời gian phản hồi.
+- Năng suất.
+- Sử dụng tài nguyên.
+- Tốc độ tải tối đa mà hệ thống có thể chịu đựng. 
 
-:point_right:  Then, we design tests to simulate the load, taking care to measure each of these criteria.
+:point_right:  Sau đó, ta thiết kế kiểm tra tải giả lập, cẩn thận đo lường với mỗi tiêu chí.
 
-:point_right:  In the absence of formal testing tools, we can basically create our own.
-- For example: we could simulate concurrent users by creating thousands of virtual users. We would write a multi-threaded program with thousands of threads, where each thread acts as a real-world user loading the page. For each user, we would programmatically measure response time, data I/O, etc.
+:point_right:  Trong trường hợp không có các công cụ kiểm tra chính thức, ta về cơ bản có thể tạo ra công cụ của riêng mình. 
+- Cho ví du: ta có thể giả lập người dùng đồng thời bằng cách tạo ra hàng nghìn người dùng ảo. Ta có thể viết một chương trình đa luồng với vài nghìn luồng, trong đó mỗi luồng sẽ hoạt động như một người dùng thực tế để tải trang. Với mỗi người dùng, ta sẽ lập trình đo thời gian phản hồi, dữ liệu, đọc ghi, v.v.
  
-:point_right:   We would then analyze the results based on the data gathered during the tests and compare it with the accepted values.
+:point_right:   Ta cũng có thể phân tích kết quả dựa trên dữ liệu thu thập được trong quá trình thử nghiệm và so sánh chúng với các giá trị có thể chấp nhận.
 
 ___
 
