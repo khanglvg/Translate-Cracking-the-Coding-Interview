@@ -82,7 +82,7 @@ Ta cần đảm bảo rằng chương trình xử lý thông tin đầu vào x�
 
 Đối với những lỗi ở trên, ta có thể hỏi người phỏng vấn muốn ta trả về false hay quăng ra biệt lệ và ta nên kiểm tra tương ứng.
 
-**Kiểm thử loại #2: Kiểm thử chung*
+**Kiểm thử loại #2: Kiểm thử chung**
 
 Kiểm thử chung rộng hơn rất nhiều. Lý tưởng nhất là ta nên kiểm tra mỗi bàn cờ có thể nhưng có quá nhiều bàn cờ. Tuy nhiên, ta có thể thực hiện đối với phạm vi hợp lý có thể của các bàn cờ khác nhau. Có 6 mảnh trong bộ cờ, do đó ta có thể kiểm trả từng mảnh so với các mảnh còn lại theo mọi hướng có thể. Việc này trông nhưng đoạn mã giả dưới đây:
 ```
