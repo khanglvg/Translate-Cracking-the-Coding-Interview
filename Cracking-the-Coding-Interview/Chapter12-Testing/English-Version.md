@@ -76,7 +76,7 @@ In this problem, there are two primary types of testing: extreme case validation
 We need to ensure that the program handles bad or unusual input gracefully. This means checking the following conditions:
 - Test with negative numbers for x and y.
 - Test with x larger than the width.
-- Test withy larger than the heigh.
+- Test with y larger than the heigh.
 - Test with a completely full board.
 - Test with an empty or nearly empty board.
 - Test with far more white pieces than black.
