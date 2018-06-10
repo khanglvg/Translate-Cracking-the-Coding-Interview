@@ -91,10 +91,10 @@ Giả sử rằng bạn được yêu cầu viết code để test sort(int[] ar
 
 **_Bước 1:_** Định nghĩa test case
 Thông thường, bạn nên nghĩ về những loại test case sau:
-- Case thông thường: Nó có tạo ra output đúng với các input đưa vào không? Hãy nhớ rằng có những vấn đề tiềm ẩn. Ví dụ, vì việc sắp xếp thường yêu cầu một số phân đoạn, có lý khi mà một thuật toán có thể hỏng vì các mảng có một số lẻ các phần tử, từ đó nó không thể được phân chia đều nhau. Test case của bạn nên liệt kê cả 2 ví dụ.
-- Case khó đỡ (The extremes): Chuyện gì sẽ xảy ra khi bạn nhận một cái mảng rỗng? hay một cái rất nhỏ (mảng 1 phần tử)? hoặc là một cái rất lớn?
-- Input rỗng và “không hợp lệ” (Nulls and “illegal” input): Thật đáng giá để nghĩ về việc code sẽ thể hiện như thế nào khi được nhận một input không hợp lệ. Ví dụ, nếu bạn đang test một chức năng để tạo một dãy n số Fibonacci, test case của bạn chắc hẳn nên chứa cả trường hợp n là số âm.
-- Input “lạ” (Strange input): Một dạng input thứ tư đôi lúc xuất hiện: strange input. Chuyện gì xảy ra khi bạn nhận một mảng đã được sắp xếp? hay một mảng được sắp với chiều ngược lại?
+- _Case thông thường:_ Nó có tạo ra output đúng với các input đưa vào không? Hãy nhớ rằng có những vấn đề tiềm ẩn. Ví dụ, vì việc sắp xếp thường yêu cầu một số phân đoạn, có lý khi mà một thuật toán có thể hỏng vì các mảng có một số lẻ các phần tử, từ đó nó không thể được phân chia đều nhau. Test case của bạn nên liệt kê cả 2 ví dụ.
+- _Case khó đỡ (The extremes):_ Chuyện gì sẽ xảy ra khi bạn nhận một cái mảng rỗng? hay một cái rất nhỏ (mảng 1 phần tử)? hoặc là một cái rất lớn?
+- _Input rỗng và “không hợp lệ” (Nulls and “illegal” input):_ Thật đáng giá để nghĩ về việc code sẽ thể hiện như thế nào khi được nhận một input không hợp lệ. Ví dụ, nếu bạn đang test một chức năng để tạo một dãy n số Fibonacci, test case của bạn chắc hẳn nên chứa cả trường hợp n là số âm.
+- _Input “lạ” (Strange input):_ Một dạng input thứ tư đôi lúc xuất hiện: strange input. Chuyện gì xảy ra khi bạn nhận một mảng đã được sắp xếp? hay một mảng được sắp với chiều ngược lại?
 Tạo ra những test này đòi hỏi kiến thức về các chức năng bạn đang viết. Nếu bạn còn chưa rõ về những ràng buộc, bạn sẽ cần phải hỏi người phỏng vấn bạn đầu tiên. 
 
 **_Bước 2:_** Định nghĩa kết quả mong đợi
@@ -145,6 +145,7 @@ Cài đặt lại browser có thể giải quyết vấn đề của người d�
 
 
 ___
+===== END PART 1 =====
 ___
 
 ## Concepts and Algorithms: Solutions
