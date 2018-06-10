@@ -62,28 +62,29 @@ _Một_ là `unsigned int`, theo định nghĩa, 1 biến có kiểu `unsigned i
 ___
 
 > **Ví dụ 3:** 
- We have the following method used in a chess game: boolean canMoveTo(int x, int y). This method is part of the Piece class and returns whether or not the piece can move to position (x, y). Explain how you would test this method. 
+ Ta có phương pháp sau đây có thể sử dụng trong trò chơi cờ vua: boolean canMoveTo(int x, int y). Phương pháp này là một phần của lớp Piece và trả về có thể đi hay không tới vị trí (x,y). Giải thích rằng bạn sẽ kiểm tra phương pháp này như thế nào.
+
    
 #### **Giải Pháp**
 
-In this problem, there are two primary types of testing: extreme case validation (ensuring that the program doesn't crash on bad input), and general case testing. We'll start with the first type.
+Ở vấn đề này, có 2 loại kiểm thử chính: xác thực trường hợp cực đoan (đảm bảo rằng chương trình sẽ không bị lỗi khi nhập vào dữ liệu xấu) và kiểm tra trường hợp chung. Ta sẽ bắt đầu với trường hợp đầu tiên:
 
-**Testing Type #1: Extreme Case Validation**
+**Kiểm thử loại #1: Kiểm thử cực đoan**
 
-We need to ensure that the program handles bad or unusual input gracefully. This means checking the following conditions:
-- Test with negative numbers for x and y.
-- Test with x larger than the width.
-- Test withy larger than the heigh.
-- Test with a completely full board.
-- Test with an empty or nearly empty board.
-- Test with far more white pieces than black.
-- Test with far more black pieces than white.
-For the error cases above, we should ask our interviewer whether we want to return false or throw an exception, and we should test accordingly. 
+Ta cần đảm bảo rằng chương trình xử lý thông tin đầu vào xấu hoặc không bình thường. Điều này có nghĩa là kiểm tra các điều kiện sau:
+- Kiểm tra với x và y là số âm.
+- Kiểm tra giá trị x lớn hơn chiều rộng.
+- Kiểm tra giá trị y lớn hơn chiều dài.
+- Kiểm tra với bàn cờ bị đầy (không còn chỗ trống).
+- Kiểm tra với bàn cờ có một chỗ trống hoặc hầu như bàn cờ trống.
+- Kiểm tra với việc ô trắng nhiều hơn ô đen.
+- Kiểm tra với việc ô đen nhiều hơn ô trắng.
 
-**Testing Type #2: General Testing**
+Đối với những lỗi ở trên, ta có thể hỏi người phỏng vấn muốn ta trả về false hay quăng ra biệt lệ và ta nên kiểm tra tương ứng.
 
-General testing is much more expansive. Ideally, we would tes t every possible board, but there are far too many boards. We can, however, perform a reasonable coverage of different boards . 
-There are 6 pieces in chess, so we can test each piece against every other piece, in every possible direction.This would look something like the below code: 
+**Kiểm thử loại #2: Kiểm thử chung*
+
+Kiểm thử chung rộng hơn rất nhiều. Lý tưởng nhất là ta nên kiểm tra mỗi bàn cờ có thể nhưng có quá nhiều bàn cờ. Tuy nhiên, ta có thể thực hiện đối với phạm vi hợp lý có thể của các bàn cờ khác nhau. Có 6 mảnh trong bộ cờ, do đó ta có thể kiểm trả từng mảnh so với các mảnh còn lại theo mọi hướng có thể. Việc này trông nhưng đoạn mã giả dưới đây:
 ```
 foreach piece a: 
   foreach other type of piece b (6 types + empty space ) 
@@ -92,7 +93,7 @@ foreach piece a:
       Place piece b in direction d.
       Try to move - check return value.
 ```
-The key to this problem is recognizing that we can't test every possible scenario, even if we would like to. So, instead, we must focus on the essential areas.
+Chìa khóa để giải quyết vấn đề này là ta nhận ra rằng ta không thể kiểm tra tất cả các trường hợp có thể xảy ra ngay cả khi ta mong muốn. Chính vì vậy, thay vào đó, ta nên tập trung vào những vùng thiết yếu.
 
 ___
 
