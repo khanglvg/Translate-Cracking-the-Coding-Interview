@@ -9,7 +9,8 @@
     printf("%d\n", i);
   ```
 
-**Giải Pháp**
+## **Giải Pháp**
+
 Có 2 lỗi trong đoạn code trên.
 
 _Một_ là `unsigned int`, theo định nghĩa, 1 biến có kiểu `unsigned int` thì có giá trị lớn hơn hoặc bằng 0. Vòng lặp điều kiện `for` sẽ luôn đúng, do đó, nó sẽ thực hiện lặp vô tận.
