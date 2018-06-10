@@ -1,7 +1,12 @@
 # Kiểm thử (Testing)
 
 > Trước khi bạn lướt qua phần này và nói rằng “tôi không phải là một tester”, hãy dừng lại một chút và suy nghĩ. Testing là một khâu quan trọng đối với một kĩ sư phần mềm, bởi lí do này nên những câu hỏi liên quan đến testing có thể xuất hiện trong cuộc phỏng vấn của bạn. Dĩ nhiên, nếu bạn ứng cử bản thân cho vị trí Tester thì đây là lúc bạn nên chú ý đó!
-Những vấn đề của Testing thường rơi vào 1 trong 4 hạng mục: (1) Test 1 vật thể thực tại (ví dụ như 1 cây bút bi); (2) Test 1 phần của phần mềm; (3) Viết test code cho một chức năng; (4) Sửa chữa một vấn đề đang hiện hữu. Chúng ta sẽ cùng tiếp cận từng vấn đề trong 4 loại nêu trên.
+Những vấn đề của Testing thường rơi vào 1 trong 4 hạng mục: 
+1. Test 1 vật thể thực tại (ví dụ như 1 cây bút bi).
+2. Test 1 phần của phần mềm. 
+3. Viết test code cho một chức năng.
+4. Sửa chữa một vấn đề đang hiện hữu. 
+Chúng ta sẽ cùng tiếp cận từng vấn đề trong 4 loại nêu trên.
 Hãy nhớ rằng 4 loại nêu trên yêu cầu bạn đừng cho rằng input hay user sẽ hoạt động tốt. Hãy trông chờ vào những lỗi có thể xuất hiện và lên kế hoạch cho chúng.
 
 
@@ -76,7 +81,7 @@ Ghi nhớ rằng testing phần mềm có 2 mặt trọng tâm:
 
 :point_right:  Khi bạn đi qua cái danh sách này, đừng kể liền một hơi về những viễn cảnh bạn có thể nghĩ ra. Nó thật sự là không có tổ chức và chắc hẳn bạn sẽ bỏ lỡ những hạng mục quan trọng. Thay vào đó, tiếp cận nó với một phương thức có tổ chức. Chia phần testing của bạn ra các thành phần chính và bắt đầu từ đó. Điều đó sẽ không chỉ giúp bạn có một danh sách test cases hoàn thiện hơn mà nó còn thể hiện bạn là một người có tổ chức, một người làm việc có phương pháp!
 
-###**Kiểm tra một chức năng (Testing a Function)**
+### **Kiểm tra một chức năng (Testing a Function)**
 Trong nhiều trường hợp, testing một chức năng là kiểu testing dễ dàng nhất. Cuộc đối thoại thường sẽ ngắn gọn hơn và ít mơ hồ vì đối với việc testing thường bị hạn chế về mặt xác thực input và output.
 
 Tuy nhiên, đừng bỏ lơ giá trị của một số cuộc đối thoại với người phỏng vấn bạn. Bạn nên tranh luận bất kỳ tình huống giả định nào với họ, đặc biệt là bạn nên xử lý những tình huống cụ thể với sự tôn trọng.
@@ -108,20 +113,20 @@ Một khi bạn đã có test case và định nghĩa kết quả thì việc vi
 	}
 ```
 
-###**Câu hỏi sửa chữa (Troubleshooting Questions)**
+### **Câu hỏi sửa chữa (Troubleshooting Questions)**
 Một dạng câu hỏi cuối là hãy giải thích bạn sẽ debug hay sửa chữa một vấn đề đang hiện hữu như thế nào. Nhiều ứng viên thường lẩn tránh câu hỏi như đưa ra những câu trả lời không thực tế như “cài đặt lại phần mềm”. Bạn có thể tiếp cận những câu hỏi như thế này bằng một phương pháp có cấu trúc như mọi thứ khác thôi.
 Hãy cùng bước qua bấn đề này với một ví dụ: Bạn đang làm việc cho Google Chrome và khi bạn nhận được một bug report: Chrome bị crash khi khởi động. Bạn sẽ làm gì?
 Cài đặt lại browser có thể giải quyết vấn đề của người dùng, nhưng nó sẽ không giúp những người dùng khác có cùng vấn đề. Mục tiêu của bạn là hiểu rõ những gì đang thực sự xảy ra và như vậy các developer có thể sửa chữa nó.
 
 **_Bước 1:_ Hiểu về những gì đang xảy ra**
-Điều đầu tiên bạn nên làm là hỏi để hiểu rõ về tình hình nhiều nhất có thể.
-- Người dùng đã phải trải qua vấn đề này bao lâu rồi?
-- Phiên bản browser là đang dùng là gì? Hệ điều hành đang dùng?
-- Lỗi này có xảy ra một cách hệ thống hay không, hoặc tần suất xảy ra lỗi? Nó xảy ra khi nào?
-- Có error report hiện ra không?
+- Điều đầu tiên bạn nên làm là hỏi để hiểu rõ về tình hình nhiều nhất có thể.
+  - Người dùng đã phải trải qua vấn đề này bao lâu rồi?
+  - Phiên bản browser là đang dùng là gì? Hệ điều hành đang dùng?
+  - Lỗi này có xảy ra một cách hệ thống hay không, hoặc tần suất xảy ra lỗi? Nó xảy ra khi nào?
+  - Có error report hiện ra không?
 
 **_Bước 2:_ Chia nhỏ vấn đề**
-Bây giờ bạn đã hiểu chi tiết về những gì đang xảy ra, bạn muốn chia vấn đề ra thành các thành phần nhỏ có thể test được. Trong trường hợp này , bạn có thể tưởng tượng dòng chảy của nó như sau:
+- Bây giờ bạn đã hiểu chi tiết về những gì đang xảy ra, bạn muốn chia vấn đề ra thành các thành phần nhỏ có thể test được. Trong trường hợp này , bạn có thể tưởng tượng dòng chảy của nó như sau:
 
 1. Đi đến cửa số Windows
 2. Click biểu tượng Chrome
@@ -132,10 +137,10 @@ Bây giờ bạn đã hiểu chi tiết về những gì đang xảy ra, bạn m
 7. Browser parses webpage
 8. Browser displays content
 
-Tại một số thời điểm trong quá trình này, một cái gì đó gây ra lỗi và nó gây ra hiện tượng crash cho browser. Một tester giỏi sẽ lặp lại những tác nhân này và chẩn đoán vấn đề.
+- Tại một số thời điểm trong quá trình này, một cái gì đó gây ra lỗi và nó gây ra hiện tượng crash cho browser. Một tester giỏi sẽ lặp lại những tác nhân này và chẩn đoán vấn đề.
 
 **_Bước 3:_ Tạo ra các test cụ thể và dễ quản lý**
-Mỗi thành phần trên nên có một hướng dẫn thực tế - điều mà bạn có thể yêu cầu người dùng làm, hoặc những điều mà bạn có thể tự làm (như là lặp lại các bước trên máy móc của bạn). Trong thế giới thực, bạn sẽ thỏa thuận với khách hàng và bạn không thể đưa cho họ các hướng dẫn mà họ không thể hoặc không làm.
+- Mỗi thành phần trên nên có một hướng dẫn thực tế - điều mà bạn có thể yêu cầu người dùng làm, hoặc những điều mà bạn có thể tự làm (như là lặp lại các bước trên máy móc của bạn). Trong thế giới thực, bạn sẽ thỏa thuận với khách hàng và bạn không thể đưa cho họ các hướng dẫn mà họ không thể hoặc không làm.
 
 
 ___
