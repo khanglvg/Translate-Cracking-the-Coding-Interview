@@ -33,7 +33,7 @@ _Một_ là `unsigned int`, theo định nghĩa, 1 biến có kiểu `unsigned i
   
   ___
   
-  > Ví dụ 2:
+  > **Ví dụ 2:** \n
   Bạn nhận được một mã nguồn cho một ứng dụng mà mỗi lần chạy đều bị crash. Sau khi chạy 10 lần ở chế độ debug, bạn nhận ra rằng ứng dụng sẽ không bị crash ở cùng 1 nơi. Ứng dụng chạy đơn luồng và chỉ sử dụng thư viện chuẩn C. Vậy lý do dẫn đến lỗi crash ứng dụng là gì? Ứng với mỗi lần như vậy bạn sẽ kiểm tra như thế nào?
   
   #### **Giải Pháp**
