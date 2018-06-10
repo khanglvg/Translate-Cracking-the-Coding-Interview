@@ -118,48 +118,49 @@ To perform load testing, we must first identify the performance critical scenari
 ___
 
 > **Ví dụ 5:**
-  How would you test a pen?
+  Bạn sẽ kiểm tra một cây viết mực như thế nào?
         
 #### **Giải Pháp**
 
-This problem is largely about understanding the constraints and approaching the problem in a structured manner.
-To understand the constraints, you should ask a lot of questions to understand the "who, what , where, when, how and why" of a problem (or as many of those as apply to the problem). Remember that a good tester understands exactly what he is testing before starting the work. 
-To illustrate the technique in this problem, let us guide you through a mock conversation.
+Độ khó của câu hỏi là việc hiểu được các ràng buộc và cách tiếp cận vấn đề một cách có cấu trúc.
+Để hiểu được các ràng buộc, bạn nên đặt ra nhiều câu hỏi để hiểu như "ai, cái gì, khi nào, ở đâu, như thế nào và tại sao?" của một vấn đề (hoặc có thể áp dụng cho chúng cho vấn đề này). Hãy nhớ rằng, một người kiểm thử giỏi sẽ hiểu được chính xác người đó đang kiểm tra thứ gì trước khi bắt tay vào công việc. 
 
-**Interviewer**: How would you test a pen?
+Để minh họa phương pháp trong vấn đề này, ta xem qua một đoạn hội thoại giả định sau:
 
-**Candidate**: Let me find out a bit about the pen. Who is going to use the pen? 
+**Người phỏng vấn**: Bạn sẽ kiểm tra một cây viết mực như thế nào?
 
-**Interviewer**: Probably children. 
+**Người ứng cử**: Để tôi tìm hiểu một chút về cây viết này. Ai sẽ sử dụng viết?
 
-**Candidate**: Okay, that's interesting. What will they be doing with it? Will they be writing, drawing, or doing something else with it? 
+**Người phỏng vấn**: Hầu hết là trẻ em. 
 
-**Interviewer**: Drawing. 
+**Người ứng cử**: Okay, thú vị đấy. Họ sẽ làm gì với chúng? Viết, vẽ, hoặc làm gì khác?
 
-**Candidate**: Ok, great. On what? Paper? Clothing? Walls? 
+**Người phỏng vấn**: Vẽ. 
 
-**Interviewer**: On clothing. 
+**Người ứng cử**: Ồ tuyệt, Chúng sẽ vẽ trên gì? Giấy? Quần áo? Tường?
 
-**Candidate**: Great. What kind of tip does the pen have? Felt? Ball point? Is it intended to wash off, or is it intended to be permanent? 
+**Người phỏng vấn**: Trên quần áo. 
 
-**Interviewer**: It's intended to wash off. 
+**Người ứng cử**: Hay. Loại đầu mực của cây viết là gì? Bằng nỉ (viết lông) hay là đầu bi? Mực lâu phai hay mực dễ xóa?
 
-Many questions later, you may get to this:
+**Người phỏng vấn**: Mực dễ xóa. 
 
-**Candidate**: Okay, so as I understand it , we have a pen that is being targeted at 5 to 10 year olds. The pen has a felt tip and comes in red, green, blue and black. It's intended to wash off when clothing is washed. Is that correct?
+Nhiều câu hỏi trôi qua, bạn có thể nhận được kết luận:
 
-:point_right:  The candidate now has a problem that is significantly different from what it initially seemed to be. This is not uncommon. In fact, many interviewers intentionall y give a problem that seems clear (everyone knows what a pen is!), only to let you discover that it's quite a different problem from what it seemed. Their belief is that users do the same thing, though users do so accidentally.
+**Người ứng cử**: Okay, tôi đã hiểu rồi. Chúng ta có một cây viết cho trẻ em từ 5 đến 10 tuổi. Là loại viết lông và màu đỏ, xanh lá, xanh dương và đen, loại dễ phai, khi viết lên quần áo có thể giặt sạch, phải không?
 
-Now that you understand what you're testing, it's time to come up with a plan of attack. The key here is structure. 
+:point_right:  Ứng cử viên đã nắm được vấn đề một cách rõ ràng, khác biệt rất nhiều so với lúc đầu. Điều này không phải hiếm gặp. Trong thực tế, rất nhiều người phỏng vấn cố tình đưa ra những vấn đề trông có vẻ rõ ràng (ai mà chả biết cây viết là gì ?!?), nhưng chỉ khi bạn khám phá ra rằng vấn đề khá là khác so với những gì bạn nghĩ. Họ tin rằng những người dùng làm những việc giống nhau mặc dù người dùng làm một cách ngẫu nhiên.
 
-Consider what the different components of the object or problem, and go from there. In this case, the components might be:
-- _Fact check_: Verify that the pen is felt tip and that the ink is one of the allowed colors. 
-- _Intended use_: Drawing. Does the pen write properly on clothing?
-- _Intended use_: Washing. Does it wash off of clothing (even if it's been there for an extended period of time)? Does it wash off in hot, warm and cold water? 
-- _Safety_: Is the pen safe (non-toxic) for children?
-- _Unintended uses_: How else might children use the pen? They might write on other surfaces, so you need to check whether the behavior there is correct. They might also stomp on the pen , throw it , and so on. You'll need to make sure that the pen holds up under these conditions.
+Bây giờ bạn đã hiểu bạn đã kiểm tra thứ gì rồi, đã đến lúc đặt ra kế hoạch cho việc bắt đầu. Chìa khóa ở đây là một cấu trúc.
 
-:point_right:  Remember that in any testing question, you need to test both the intended and unintended scenarios. People don't always use the product the way you want them to.
+Cân nhắc xem sự khác biệt giữa các thành phần của vật thể hay vấn đề, xuất phát từ đó. Trong trường hợp này, những thành phần có thể là:
+- _Kiểm tra nhanh:_ Thẩm định cây viết là viết lông và loại màu mực.
+- _Ý định sử dụng:_ Vẽ. Có chắc rằng chỉ viết trên quần áo?
+- _Ý định sử dụng:_ Giặt. Khi vẽ lên quần áo rất dễ giặt ra mặc dù để thời gian dài? Giặt sạch bằng nước ấm hay nước lạnh?
+- _Sự an toàn:_ Cây viết không có chất độc hại cho trẻ em?
+- _Không có định hướng:_ Trẻ em còn dùng viết vào mục đích khác? Có thể viết lên bề mặt khác, bạn có thể kiểm tra trạng thái đó là đúng. Họ cũng có thể giẫm mạnh lên viết, quăng nó đi, v.v. Bạn cần đảm bảo rằng cây viết vẫn "sống sót" qua những điều kiện trên.
+
+:point_right:  Hãy nhớ rằng trong bất kì câu hỏi nào, bạn cần kiểm tra cả trường hợp có định hướng và không có định hướng. Người dùng không phải lúc nào cũng sử dụng sản phẩm theo cách mà bạn mong muốn họ sử dụng.
 
 ___
 
