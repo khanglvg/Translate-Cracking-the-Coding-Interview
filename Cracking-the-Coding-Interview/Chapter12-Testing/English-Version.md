@@ -72,6 +72,7 @@ ___
 In this problem, there are two primary types of testing: extreme case validation (ensuring that the program doesn't crash on bad input), and general case testing. We'll start with the first type.
 
 **Testing Type #1: Extreme Case Validation**
+
 We need to ensure that the program handles bad or unusual input gracefully. This means checking the following conditions:
 - Test with negative numbers for x and y.
 - Test with x larger than the width.
@@ -83,6 +84,7 @@ We need to ensure that the program handles bad or unusual input gracefully. This
 For the error cases above, we should ask our interviewer whether we want to return false or throw an exception, and we should test accordingly. 
 
 **Testing Type #2: General Testing**
+
 General testing is much more expansive. Ideally, we would tes t every possible board, but there are far too many boards. We can, however, perform a reasonable coverage of different boards . 
 There are 6 pieces in chess, so we can test each piece against every other piece, in every possible direction.This would look something like the below code: 
 ```
@@ -128,16 +130,25 @@ To understand the constraints, you should ask a lot of questions to understand t
 To illustrate the technique in this problem, let us guide you through a mock conversation.
 
 **Interviewer**: How would you test a pen?
+
 **Candidate**: Let me find out a bit about the pen. Who is going to use the pen? 
+
 **Interviewer**: Probably children. 
+
 **Candidate**: Okay, that's interesting. What will they be doing with it? Will they be writing, drawing, or doing something else with it? 
+
 **Interviewer**: Drawing. 
+
 **Candidate**: Ok, great. On what? Paper? Clothing? Walls? 
+
 **Interviewer**: On clothing. 
+
 **Candidate**: Great. What kind of tip does the pen have? Felt? Ball point? Is it intended to wash off, or is it intended to be permanent? 
+
 **Interviewer**: It's intended to wash off. 
 
 Many questions later, you may get to this:
+
 **Candidate**: Okay, so as I understand it , we have a pen that is being targeted at 5 to 10 year olds. The pen has a felt tip and comes in red, green, blue and black. It's intended to wash off when clothing is washed. Is that correct?
 
 :point_right:  The candidate now has a problem that is significantly different from what it initially seemed to be. This is not uncommon. In fact, many interviewers intentionall y give a problem that seems clear (everyone knows what a pen is!), only to let you discover that it's quite a different problem from what it seemed. Their belief is that users do the same thing, though users do so accidentally.
@@ -180,4 +191,4 @@ Manual testing would involve going through the steps above, making sure to check
 
 :point_right:  Automated testing is a bit more complex. We'll want to automate all the standard scenarios, as shown above, and we also want to look for some very specific issues, such as race conditions. Ideally, we would be able to set up a closed system with fake accounts and ensure that, even if someone withdraws and deposits money rapidly from different locations, he never gets money or loses money that he shouldn't. 
 
-:point_right:  Above all, we need to prioritize security and reliability. People's accounts must always be protected, and we must make sure that money is always properly accounted for. No one wants to unexpectedly lose money! A good tester understands the system priorities
+:point_right:  Above all, we need to prioritize security and reliability. People's accounts must always be protected, and we must make sure that money is always properly accounted for. No one wants to unexpectedly lose money! A good tester understands the system priorities.
