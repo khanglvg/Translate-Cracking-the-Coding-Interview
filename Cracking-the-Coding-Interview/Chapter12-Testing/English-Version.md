@@ -81,6 +81,7 @@ We need to ensure that the program handles bad or unusual input gracefully. This
 - Test with an empty or nearly empty board.
 - Test with far more white pieces than black.
 - Test with far more black pieces than white.
+
 For the error cases above, we should ask our interviewer whether we want to return false or throw an exception, and we should test accordingly. 
 
 **Testing Type #2: General Testing**
