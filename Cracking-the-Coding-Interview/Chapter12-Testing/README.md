@@ -9,7 +9,7 @@
     printf("%d\n", i);
   ```
 
-## **Giải Pháp**
+#### **Giải Pháp**
 
 Có 2 lỗi trong đoạn code trên.
 
