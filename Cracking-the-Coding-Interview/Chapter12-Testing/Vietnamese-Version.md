@@ -6,6 +6,7 @@ Những vấn đề của Testing thường rơi vào 1 trong 4 hạng mục:
 > 2. Test 1 phần của phần mềm. 
 > 3. Viết test code cho một chức năng.
 > 4. Sửa chữa một vấn đề đang hiện hữu. 
+
 > Chúng ta sẽ cùng tiếp cận từng vấn đề trong 4 loại nêu trên.
 > Hãy nhớ rằng 4 loại nêu trên yêu cầu bạn đừng cho rằng input hay user sẽ hoạt động tốt. Hãy trông chờ vào những lỗi có thể xuất hiện và lên kế hoạch cho chúng.
 
