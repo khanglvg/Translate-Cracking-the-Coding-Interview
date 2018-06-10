@@ -148,15 +148,18 @@ ___
 ===== END PART 1 =====
 ___
 
+
 ## Concepts and Algorithms: Solutions
 
+___
 > **Ví dụ 1:**
-	Tìm (những) lỗi trong đoạn code sau:
+	Tìm (những) lỗi trong đoạn code sau:	
   ```
   unsigned int i;
   for (i = 100; i >= 0; --i)
     printf("%d\n", i);
   ```
+___
 
 #### **Giải Pháp**
 
@@ -184,7 +187,8 @@ _Một_ là `unsigned int`, theo định nghĩa, 1 biến có kiểu `unsigned i
   
   > **Ví dụ 2:** 
   Bạn nhận được một mã nguồn cho một ứng dụng mà mỗi lần chạy đều bị ~~crash~~. Sau khi chạy 10 lần ở chế độ debug, bạn nhận ra rằng ứng dụng sẽ không bị ~~crash~~ ở cùng 1 nơi. Ứng dụng chạy đơn luồng và chỉ sử dụng thư viện chuẩn C. Vậy lý do dẫn đến lỗi ~~crash~~ ứng dụng là gì? Ứng với mỗi lần như vậy bạn sẽ kiểm tra như thế nào?
-  
+___
+
   #### **Giải Pháp**
   
   Độ khó của câu hỏi phụ thuộc vào loại ứng dụng được chuẩn đoán. Tuy nhiên, ta có thể đưa ra một vài nguyên nhân chung dẫn đến việc ~~crash~~ ứng dụng ngẫu nhiên như sau: 
@@ -212,7 +216,7 @@ ___
 
 > **Ví dụ 3:** 
  Ta có phương pháp sau đây có thể sử dụng trong trò chơi cờ vua: boolean canMoveTo(int x, int y). Phương pháp này là một phần của lớp Piece và trả về có thể đi hay không tới vị trí (x,y). Giải thích rằng bạn sẽ kiểm tra phương pháp này như thế nào.
-
+___
    
 #### **Giải Pháp**
 
@@ -248,7 +252,8 @@ ___
 
 > **Ví dụ 4:**
   Bạn sẽ kiểm tra tải một trang web như thế nào nếu không sử dụng bất kì công cụ kiểm thử nào?
-     
+___
+
 #### **Giải Pháp**
 
 Kiểm tra tải giúp xác định khả năng hoạt động tối đa của một ứng dụng web, cũng như bất kỳ sực tắc nghẽn nào có thể ảnh hưởng đến hiệu suất hoạt động của ứng dụng đó. Tương tự, có thể kiểm tra cách ứng dụng phản hồi với các biến thể trong khi tải. Để thực hiện việc kiểm tra tải, trước hết, ta phải xác định các tình huống quan trọng về hiệu suất và các chỉ số đáp ứng các mục tiêu hiệu suất. Tiêu chí điển hình bao gồm:
@@ -268,7 +273,8 @@ ___
 
 > **Ví dụ 5:**
   Bạn sẽ kiểm tra một cây viết mực như thế nào?
-        
+___
+
 #### **Giải Pháp**
 
 Độ khó của câu hỏi là việc hiểu được các ràng buộc và cách tiếp cận vấn đề một cách có cấu trúc.
@@ -315,7 +321,8 @@ ___
 
 > **Ví dụ 6:**
   Bạn sẽ kiểm tra một cây ATM trong hệ thống ngân hàng được phân bố như thế nào?
-        
+___
+
 #### **Giải Pháp**
 
 Việc đầu tiên cần làm để trả lời câu hỏi này là làm cho nó được rõ nghĩa. Hỏi theo trình tự sau: 
@@ -340,4 +347,6 @@ Ta hầu như chắc chắn sẽ muốn sử dụng cả kiểm tra tự động
 
 :point_right:  Trên hết, ta cần ưu tiên cao cho việc bảo mật và đáng tin cậy. Người dùng phải luôn được bảo vệ và ta phải đảm bảo rằng tiền luôn luôn còn nguyên :laughing::laughing::laughing:. Không ai muốn một ngày đẹp trời kiểm tra tài khoản và toàn bộ số tiền không cánh mà bay! Một người kiểm thử tốt phải hiểu được độ ưu tiên của hệ thống.
 
+___
 ===== THE END =====
+___
