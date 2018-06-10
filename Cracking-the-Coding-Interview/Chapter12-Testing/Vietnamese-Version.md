@@ -164,28 +164,28 @@ Consider what the different components of the object or problem, and go from the
 ___
 
 > **Ví dụ 6:**
-  How would you test an ATM in a distributed banking system?
+  Bạn sẽ kiểm tra một cây ATM trong hệ thống ngân hàng được phân bố như thế nào?
         
 #### **Giải Pháp**
 
-The first thing to do on this question is to clarify assumptions. Ask the following questions: 
-- Who is going to use-the ATM? Answers might be "anyone," or it might be "blind people," or any number of other answers.
-- What are they going to use it for? Answers might be "withdrawing money", "transferring money", "checking their balance", or many other answers.
-- What tools do we have to test? Do we have access to the code, or just to the ATM? 
+Việc đầu tiên cần làm để trả lời câu hỏi này là làm cho nó được rõ nghĩa. Hỏi theo trình tự sau: 
+- Ai là người sử dụng cây ATM? Có thể là mọi người, hoặc người mù, hoặc nhiều câu học khác.
+- Họ sử dụng cây ATM vào mục đích gì? Có thể là rút tiền, chuyển khoản, hoặc đơn giản là kiểm tra số tiền còn trong tài khoản hoặc làm gì đó khác.
+- Công cụ gì để ta có thể kiểm tra được? Ta có thể truy cập vào code hoặc cây ATM được hay không? 
 
-Remember: a good tester makes sure she knows what she's testing!
+Hãy nhớ rằng: Một người kiểm thử viên tốt là một người biết rõ người đó đang kiểm tra thứ gì!
 
-Once we understand what the system looks like, we'll want to break down the problem into different testable components. These components include: 
-- Logging in
-- Withdrawing money
-- Depositing money 
-- Checking balance
-- Transferring money 
+Một khi ta hiểu được hệ thống trông như thế nào, ta sẽ muốn giải quyết hết các vấn đề liên quan đến các thành phần có thể kiểm tra được khác nhau. Những thành phần đó bao gồm:
+- Đăng nhập.
+- Rút tiền.
+- Gửi tiền. 
+- Kiểm tra tài khoản.
+- Giao dịch.
 
-We would probably want to use a mix of manual and automated testing.
+Ta hầu như chắc chắn sẽ muốn sử dụng cả kiểm tra tự động và kiểm tra bằng tay.
 
-Manual testing would involve going through the steps above, making sure to check for all the error cases (low balance, new account, nonexistent account, and so on). 
+:point_right:  Kiểm tra bằng tay sẽ bao gồm các bước bên trên, chắc chắn rằng kiểm tra tất cả các lỗi xảy ra (số dư thấp, tài khoản mới, tài khoản không tồn tại, v.v). 
 
-:point_right:  Automated testing is a bit more complex. We'll want to automate all the standard scenarios, as shown above, and we also want to look for some very specific issues, such as race conditions. Ideally, we would be able to set up a closed system with fake accounts and ensure that, even if someone withdraws and deposits money rapidly from different locations, he never gets money or loses money that he shouldn't. 
+:point_right:  Kiểm tra tự động thì hơi phức tạp hơn tí. Ta cũng muốn tự động hóa tất cả những sự kiện chuẩn như trên, và cũng muốn tìm kiếm một vài vấn đề riêng biệt, như là [Race Condition] (https://en.wikipedia.org/wiki/Race_condition). Ý tưởng là ta sẽ cài đặt một hệ thống đóng với những tài khoản giả và đảm bảo rằng cho dù ai đó rút, gửi tiền ở những nơi khác thì người đó cũng sẽ không mất hay nhận được tiền như là điều người đó không mong muốn. 
 
-:point_right:  Above all, we need to prioritize security and reliability. People's accounts must always be protected, and we must make sure that money is always properly accounted for. No one wants to unexpectedly lose money! A good tester understands the system priorities.
+:point_right:  Trên hết, ta cần ưu tiên cao cho việc bảo mật và đáng tin cậy. Người dùng phải luôn được bảo vệ và ta phải đảm bảo rằng tiền luôn luôn còn nguyên :laughing::laughing::laughing:. Không ai muốn một ngày đẹp trời kiểm tra tài khoản và toàn bộ số tiền không cánh mà bay! Một người kiểm thử tốt phải hiểu được độ ưu tiên của hệ thống.
