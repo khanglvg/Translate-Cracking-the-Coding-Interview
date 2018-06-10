@@ -2,12 +2,12 @@
 
 > Trước khi bạn lướt qua phần này và nói rằng “tôi không phải là một tester”, hãy dừng lại một chút và suy nghĩ. Testing là một khâu quan trọng đối với một kĩ sư phần mềm, bởi lí do này nên những câu hỏi liên quan đến testing có thể xuất hiện trong cuộc phỏng vấn của bạn. Dĩ nhiên, nếu bạn ứng cử bản thân cho vị trí Tester thì đây là lúc bạn nên chú ý đó!
 Những vấn đề của Testing thường rơi vào 1 trong 4 hạng mục: 
-1. Test 1 vật thể thực tại (ví dụ như 1 cây bút bi).
-2. Test 1 phần của phần mềm. 
-3. Viết test code cho một chức năng.
-4. Sửa chữa một vấn đề đang hiện hữu. 
-Chúng ta sẽ cùng tiếp cận từng vấn đề trong 4 loại nêu trên.
-Hãy nhớ rằng 4 loại nêu trên yêu cầu bạn đừng cho rằng input hay user sẽ hoạt động tốt. Hãy trông chờ vào những lỗi có thể xuất hiện và lên kế hoạch cho chúng.
+> 1. Test 1 vật thể thực tại (ví dụ như 1 cây bút bi).
+> 2. Test 1 phần của phần mềm. 
+> 3. Viết test code cho một chức năng.
+> 4. Sửa chữa một vấn đề đang hiện hữu. 
+> Chúng ta sẽ cùng tiếp cận từng vấn đề trong 4 loại nêu trên.
+> Hãy nhớ rằng 4 loại nêu trên yêu cầu bạn đừng cho rằng input hay user sẽ hoạt động tốt. Hãy trông chờ vào những lỗi có thể xuất hiện và lên kế hoạch cho chúng.
 
 
 ## Definitions
