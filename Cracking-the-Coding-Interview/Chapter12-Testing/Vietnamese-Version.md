@@ -123,7 +123,7 @@ ___
 #### **Giải Pháp**
 
 Độ khó của câu hỏi là việc hiểu được các ràng buộc và cách tiếp cận vấn đề một cách có cấu trúc.
-Để hiểu được các ràng buộc, bạn nên đặt ra nhiều câu hỏi để hiểu như "ai, cái gì, khi nào, ở đâu, như thế nào và tại sao?" của một vấn đề (hoặc có thể áp dụng cho chúng cho vấn đề này). Hãy nhớ rằng, một người kiểm thử giỏi sẽ hiểu được chính xác người đó đang kiểm tra thứ gì trước khi bắt tay vào công việc. 
+Để hiểu được các ràng buộc, bạn nên đặt ra nhiều câu hỏi để hiểu như "ai, cái gì, khi nào, ở đâu, như thế nào và tại sao?" của một vấn đề (hoặc có thể hỏi những dạng câu hỏi như vậy áp dụng chúng cho vấn đề này). Hãy nhớ rằng, một người kiểm thử giỏi sẽ hiểu được chính xác người đó đang kiểm tra thứ gì trước khi bắt tay vào công việc. 
 
 Để minh họa phương pháp trong vấn đề này, ta xem qua một đoạn hội thoại giả định sau:
 
