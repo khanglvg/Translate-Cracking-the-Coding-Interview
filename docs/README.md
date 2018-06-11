@@ -1,3 +1,3 @@
 Welcome to my git.
 
-[Vietnamese-Version](Chapter12-Testing/Vietnamese-Version.md)
+[Vietnamese-Version](Chapter12-Testing)
